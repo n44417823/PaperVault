@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PaperVault | Free Exam Papers</title>
   <link rel="stylesheet" href="style.css">
+  
+<script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -28,30 +31,55 @@
         organized by grade, subject, and year.
       </p>
 
-      <input type="search" placeholder="Search coming soon..." disabled>
+     
+<input
+  id="paper-search"
+  type="search"
+  aria-label="Search exam papers"
+  placeholder="Search by subject, grade, year..."
+  autocomplete="off"
+>
+ 
     </section>
 
-    <section id="papers">
-      <h2>Browse Exam Papers</h2>
+    
+<section id="papers">
 
-      <article>
-        <h3>Mathematics</h3>
-        <p>Grade 9 | CBSE</p>
-        <p>Coming soon</p>
-      </article>
+  <h2>Browse Exam Papers</h2>
 
-      <article>
-        <h3>Science</h3>
-        <p>Grade 9 | CBSE</p>
-        <p>Coming soon</p>
-      </article>
+  <p id="results-count"></p>
 
-      <article>
-        <h3>English</h3>
-        <p>Grade 9 | CBSE</p>
-        <p>Coming soon</p>
-      </article>
-    </section>
+  <article
+    data-search="mathematics maths math ganita manjari grade 9 cbse half yearly 2026 2027"
+  >
+    <h3>Mathematics</h3>
+    <p>Grade 9 | CBSE | Half-yearly | 2026-27</p>
+    <p>Demo only - No PDF uploaded</p>
+  </article>
+
+  <article
+    data-search="science physics chemistry biology grade 9 cbse term 1 2025 2026"
+  >
+    <h3>Science</h3>
+    <p>Grade 9 | CBSE | Term 1 | 2025-26</p>
+    <p>Demo only - No PDF uploaded</p>
+  </article>
+
+  <article
+    data-search="english language grade 9 cbse half yearly 2026 2027"
+  >
+    <h3>English</h3>
+    <p>Grade 9 | CBSE | Half-yearly | 2026-27</p>
+    <p>Demo only - No PDF uploaded</p>
+  </article>
+
+  <p id="no-results" hidden>
+    No matching papers found.
+    Try another subject, grade, or year.
+  </p>
+
+</section>
+
 
     <section id="about">
       <h2>About PaperVault</h2>
