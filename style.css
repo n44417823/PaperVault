@@ -273,3 +273,50 @@ footer {
   outline: 3px solid #82b4ff;
   outline-offset: 3px;
 }
+
+/* PAPERVAULT PDF BUTTONS */
+
+#papers article .paper-status {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 12px;
+  border-radius: 20px;
+  margin: 12px 0;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.paper-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #e9f1ff;
+  color: #245fca;
+  border-radius: 9px;
+  padding: 11px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.paper-btn:hover {
+  background: #d5e5ff;
+  transform: translateY(-2px);
+}
+
+.paper-btn-download {
+  background: #387cf5;
+  color: white;
+}
+
+.paper-btn-download:hover {
+  background: #245fca;
+}
