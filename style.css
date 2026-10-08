@@ -241,3 +241,35 @@ footer {
     padding: 25px;
   }
 }
+
+
+/* SEARCH RESULTS */
+
+#results-count,
+#no-results {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+#no-results {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e3eaf4;
+}
+
+/* Keep hidden cards invisible */
+
+#papers article[hidden],
+#no-results[hidden] {
+  display: none;
+}
+
+/* Search bar focus effect */
+
+#paper-search:focus {
+  outline: 3px solid #82b4ff;
+  outline-offset: 3px;
+}
